@@ -11,7 +11,7 @@ let printFullName = function (hometown) {
 
 // name.printFullName();
 
-printFullName.call(name,"Odisha");
+printFullName.call(name, "Odisha");
 
 let name2 = {
   firstName: "Virat",
@@ -21,8 +21,20 @@ let name2 = {
 //function borrowing
 
 // name.printFullName.call(name2);
-printFullName.call(name2,"Delhi");
-
-
+printFullName.call(name2, "Delhi");
 
 // in apply we give arrray of arguments
+
+//bind
+
+const person = {
+  name: "M S Dhoni",
+};
+
+function greet(greeting, punctuation) {
+  console.log(greeting + " " + this.name + punctuation);
+}
+
+const greetPerson = greet.bind(person);
+
+greetPerson("!", " Hello");
