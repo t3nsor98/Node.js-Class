@@ -1,0 +1,16 @@
+{
+  "name": "yo",
+  "version": "1.0.0",
+  "description": "teaching",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "diggy",
+  "license": "ISC",
+  "dependencies": {
+    "marvel-characters": "^1.0.3",
+    "sillyname": "^0.1.0"
+  }
+}
